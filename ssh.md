@@ -54,3 +54,9 @@ $> ssh mymachine
 ```
 
 The ProxyCommand is just the first step you did before with ssh gautier@corporate.fr  but now it is transparent.
+
+ssh -l login
+ssh -p 8022
+ssh -i ~/.ssh/key.rsa
+ssh -L 3128:localhost:3128 login@mamachinedistante
+
