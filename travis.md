@@ -17,23 +17,23 @@ After several tries I did not figure out how to make work jobs and env matrix to
 
 ``` yaml
 env:
-	global:
-		- FOO=foo
-	matrix:
-		- TOTO=toto
-		- TOTO=tata
-		
+  global:
+    - FOO=foo
+  matrix:
+    - TOTO=toto
+    - TOTO=tata
+
 install:
-	- dnf install package
+  - dnf install package
 
 script:
-	- ./build.sh
+  - ./build.sh
 
 jobs:
-	include:
-		- stage: "Tests coverage"
-			env: BUILD_TYPE=Debug CXX11_ENABLED=YES
-			script: ./tests.sh
+  include:
+    - stage: "Tests coverage"
+      env: BUILD_TYPE=Debug CXX11_ENABLED=YES
+      script: ./tests.sh
 ```
 
 Working config with two stages:
@@ -65,6 +65,5 @@ jobs:
       script: ./build.sh
     - stage: tests
       env: BUILD_TYPE=Debug CXX11_ENABLED=YES
-      script:
-        - ./tests.sh
+      script: ./tests.sh
 ```
