@@ -1,8 +1,10 @@
+Toolchain to see every step of a compilation process
+``` bash
 #!/bin/bash
 
 # Object and the binary in 2 commands with -v options to see the steps
 # g++ -c main.cpp -o main.o -v
-# g++ main.o -o main -v 
+# g++ main.o -o main -v
 
 # Preprocess output
 g++ -E main.cpp -o main.ii
@@ -31,3 +33,4 @@ ld -o main main.o -lSystem -lstdc++
 
 # To have the ii s and o files and the binary
 g++ -save-temps main.cpp
+```

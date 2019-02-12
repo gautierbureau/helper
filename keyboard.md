@@ -1,1 +1,3 @@
-^M : carriage return (ctrl + v et ctrl + M pour le faire sous unix) 
+^M : carriage return (ctrl + v et ctrl + M pour le faire sous unix)
+
+^ : ctrl 
