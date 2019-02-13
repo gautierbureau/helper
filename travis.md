@@ -67,3 +67,9 @@ jobs:
       env: BUILD_TYPE=Debug CXX11_ENABLED=YES
       script: ./tests.sh
 ```
+
+Valid a yaml
+``` bash
+$> gem install travis
+$> travis lint .travis.yml
+```
