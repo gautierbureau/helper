@@ -20,6 +20,12 @@ $> dnf config-manager --dump
 $> cat /etc/dnf/dnf.conf
 ```
 
+Content of package
+``` bash
+$> rpm -qpl package
+$> dnf repoquery -l package
+```
+
 Some commands
 ``` bash
 $> rpm -q yum
