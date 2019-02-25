@@ -55,3 +55,20 @@ modinfo
 insmod : charge module sans dep
 rmmod
 modprobe : charge avec dep
+
+/dev : peripheriques
+mknod
+
+lspci
+lspci -v -s
+
+lsusb
+
+/proc : ressources materielles
+
+hwinfo
+hwinfo --memory
+hwinfo --cpu
+dmidecode
+dmidecode -t processor
+dmidecode -s processor-frequency
