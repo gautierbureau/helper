@@ -1,6 +1,9 @@
 Commands
 ``` bash
 $ catch throw
+$ catch catch
+$ catch exception
+$ catch assert
 $ r
 $ n
 $ s
@@ -35,3 +38,4 @@ $> gdbgui ./main
 
 [Breakpoints](http://www.unknownroad.com/rtfm/gdbtut/gdbbreak.html)
 [Breakpoints](https://sourceware.org/gdb/onlinedocs/gdb/Set-Breaks.html)
+[Catchpoints](https://sourceware.org/gdb/onlinedocs/gdb/Set-Catchpoints.html)

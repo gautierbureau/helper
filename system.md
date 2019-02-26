@@ -17,58 +17,77 @@ $> systemctl list-units --type service --all --no-pager
 
 chkconfig service_name on | systemctl enable service_name
 
-systemctl stop service
-systemctl disable service
-systemctl mask service
+``` bash
+$> systemctl stop service
+$> systemctl disable service
+$> systemctl mask service
 
-systemctl list-dependencies --after service_name
+$> systemctl list-dependencies --after service_name
 
-systemctl halt
+$> systemctl halt
+```
 
 systemadm : gui package systemd-ui
 
-systctl -e -p /etc/sysctl.conf
-systctl -a
-echo "1" > /proc/sys/net/ipv4/ip_forward
+``` bash
+$> systctl -e -p /etc/sysctl.conf
+$> systctl -a
+$> echo "1" > /proc/sys/net/ipv4/ip_forward
+```
 
-
-dmesg -T
-dmesg -k -lwarn,err
+``` bash
+$> dmesg -T
+$> dmesg -k -lwarn,err
+```
 
 /var/log/messages ou /var/log/syslog
-syslog
-syslogd
 
-journalctl
-journalctl -k -p warning..emerg
+``` bash
+$> syslog
+$> syslogd
+```
 
+``` bash
+$> journalctl
+$> journalctl -k -p warning..emerg
+```
 
+**noyau**
+``` bash
+$> uname
+$> /lib/modules/$(uname -r)
+```
 
-noyau
-uname
-/lib/modules/$(uname -r)
+**modules du noyau**
 
-modules du noyau
 lsmod : modules du noyau charges
-depmod -a
-modinfo
 insmod : charge module sans dep
-rmmod
 modprobe : charge avec dep
 
+``` bash
+$> depmod -a
+$> modinfo
+$> rmmod
+```
+
 /dev : peripheriques
-mknod
+``` bash
+$> mknod
+```
 
-lspci
-lspci -v -s
-
-lsusb
+``` bash
+$> lspci
+$> lspci -v -s
+$> lsusb
+```
 
 /proc : ressources materielles
 
-hwinfo
-hwinfo --memory
-hwinfo --cpu
-dmidecode
-dmidecode -t processor
-dmidecode -s processor-frequency
+``` bash
+$> hwinfo
+$> hwinfo --memory
+$> hwinfo --cpu
+$> dmidecode
+$> dmidecode -t processor
+$> dmidecode -s processor-frequency
+```
