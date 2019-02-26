@@ -21,9 +21,19 @@ Ctrl + Shit + M
 **Grip**
 
 ``` bash
-$> pip install --user /home/gautier/Library/pip grip
+$> pip install --user grip
 $> grip -b
 ```
+
+**Markdown editor**
+
+```bash
+$> pip install --user markdown-editor
+$> vim ~/.local/pip/lib/python2.7/site-packages/markdown_editor/editor.py
+$> markdown_edit README.md 
+```
+
+[Link error](https://github.com/ncornette/Python-Markdown-Editor/pull/18/files)
 
 **Pandoc**
 
