@@ -1,6 +1,7 @@
 # Helper
 
 - [apt](./apt.md)
+- [clean_repo](./clean_repo.md)
 - [cmake](./cmake.md)
 - [compile](./compile.md)
 - [coverage](./coverage.md)
@@ -25,11 +26,13 @@
 - [latex](./latex.md)
 - [lighttpd](./lighttpd.md)
 - [markdown](./markdown.md)
+- [npm](./npm.md)
 - [omc_mac](./omc_mac.md)
 - [pgfplots](./pgfplots.md)
 - [prompt](./prompt.md)
 - [proxy](./proxy.md)
 - [python_server](./python_server.md)
+- [shell](./shell.md)
 - [sonar](./sonar.md)
 - [ssh](./ssh.md)
 - [static_dynamic_libs](./static_dynamic_libs.md)
