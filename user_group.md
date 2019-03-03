@@ -36,3 +36,15 @@ Change default shell
 ``` bash
 $> chsh -s /bin/zsh
 ```
+
+/etc/skel
+vipw
+/etc/default/useradd
+/etc/login.defs
+chage -l gautier
+passwd -S gautier
+
+getent passwd
+
+su : substitue user mais garde l'env de depart
+su - : charge l'env de l'utilisateur

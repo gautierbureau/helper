@@ -91,3 +91,20 @@ $> dmidecode
 $> dmidecode -t processor
 $> dmidecode -s processor-frequency
 ```
+
+date --date "1 jan 1970 +11234days"
+
+lastlog
+last
+
+/etc/issue
+/etc/issue.net
+/etc/motd
+
+/etc/pam.d
+
+cups
+localhost:631
+/etc/cups/cupsd.conf
+
+
