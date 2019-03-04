@@ -40,7 +40,9 @@ $> dmesg -T
 $> dmesg -k -lwarn,err
 ```
 
-/var/log/messages ou /var/log/syslog
+**logs**
+/var/log/messages or /var/log/syslog
+/etc/syslog.conf
 
 ``` bash
 $> syslog
@@ -50,7 +52,17 @@ $> syslogd
 ``` bash
 $> journalctl
 $> journalctl -k -p warning..emerg
+$> journalctl _SYSTEMD_UNIT=ssh.service -o json-pretty
 ```
+
+/etc/systemd/journald.conf
+/run/log/journal
+
+klogd
+syslog-ng
+rsyslog
+
+logger
 
 **noyau**
 ``` bash
