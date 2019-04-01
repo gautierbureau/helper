@@ -1,53 +1,3 @@
-## getopts
-
-Only for -h, -o type of option
-
-[Tuto](https://wiki.bash-hackers.org/howto/getopts_tutorial)
-[https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash](https://stackoverflow.com/questions/192249/how-do-i-parse-command-line-arguments-in-bash)
-[https://gist.github.com/neatshell/5283811](https://gist.github.com/neatshell/5283811)
-
-## getopt
-
-To handle more complicated options for shell script.
-``` bash
-opts=`getopt -o '' --long "help,folder:" -n 'function_name' -- "$@"`
-if [ $? -ne 0 ]; then usage; exit 1; fi
-eval set -- "$opts"
-while true; do
-  case "$1" in
-    --folder)
-      MODE=create
-      USER_FOLDER=$2
-      shift 2
-      ;;
-    --help)
-      usage
-      exit 0
-      ;;
-    --)
-      shift
-      break
-      ;;
-    *)
-      break
-      ;;
-  esac
-done
-
-case $MODE in
-  create)
-    create_container
-    ;;
-  *)
-    echo
-    usage
-    exit 0
-    ;;
-esac
-```
-
-The : means the option has a mandatory argument, :: would mean it is optional.
-
 ## Bash completion
 
 The most important thing is COMPREPLY array, whatever way you find ton get it right and return 0 from teh function would be sufficient to generate the completion.
@@ -70,6 +20,7 @@ echo -e "\nprev = $prev, cur = $cur\n"
 ```
 
 [compgen options](https://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command)
+
 [bash completion builtins](https://www.gnu.org/software/bash/manual/html_node/Programmable-Completion-Builtins.html)
 
 [bash-completion](https://github.com/scop/bash-completion)
@@ -124,7 +75,9 @@ _arguments \
 [reference](http://zsh.sourceforge.net/Doc/Release/Functions.html) on `autoload`.
 
 [zsh-completions HOWTO](https://github.com/zsh-users/zsh-completions/blob/master/zsh-completions-howto.org)
+
 [Zsh reference manual](http://zsh.sourceforge.net/Doc/Release/Completion-System.html)
+
 [Completion builtin commands](http://zsh.sourceforge.net/Doc/Release/Completion-Widgets.html#Completion-Builtin-Commands)
 
 Tutos:
