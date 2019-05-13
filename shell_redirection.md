@@ -7,6 +7,12 @@ $> commande 2> fichier 1>&2
 
 La syntaxe `1>resu 2>&1` n’est pas équivalente à `2>&1 1>resu`. Dans le second cas, la sortie d’erreur standard est redirigée vers la sortie standard, c’est-à-dire vers le terminal. Puis la sortie standard est associée au fichier resu. Conclusion : les messages d’erreur sont dirigés vers le terminal et les messages résultat dans le fichier resu.
 
+Fermer stdout et stderr
+``` bash
+$> command 2>-
+$> command 1>-
+```
+
 ## echo stderr
 
 ``` bash
