@@ -51,6 +51,12 @@ $> wget https://download.virtualbox.org/virtualbox/6.0.6/Oracle_VM_VirtualBox_Ex
 $> VBoxManage extpack install ~/Downloads/Oracle_VM_VirtualBox_Extension_Pack-6.0.6.vbox-extpack
 ```
 
+## ssh
+
+Problem of multiple machine with ssh: solution /etc/hosts
+https://superuser.com/questions/877894/ssh-to-a-local-virtualbox-with-ubuntu
+ssh-keygen -R '[fedoraserver_vm]:2222’
+
 ## Vocabulary
 
 - VRDP: VirtualBox Remote Display Protocol

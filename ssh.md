@@ -56,12 +56,14 @@ User gautier
 ProxyCommand ssh gautier@corporate-bastion /usr/bin/nc %h 22
 ```
 
+or more complicated `/usr/bin/nc `basename %h .ci` %p`
+
 After this you are now hable to connect to `mymachine` simply with
 ``` bash
 $> ssh mymachine
 ```
 
-The ProxyCommand is just the first step you did before with ssh gautier@corporate.fr  but now it is transparent.
+The ProxyCommand is just the first step you did before with ssh gautier@corporate.fr but now it is transparent.
 
 Command examples
 
@@ -92,3 +94,32 @@ System deamon:
 $> systemctl status sshd
 $> service ssh status
 ```
+
+Problem of multiple VM machine with ssh: solution /etc/hosts, add `127.0.0.1 fedoraserver_vm` and connect with `ssh fedoraserver_vm` and not `ssh localhost`
+
+[https://superuser.com/questions/877894/ssh-to-a-local-virtualbox-with-ubuntu](https://superuser.com/questions/877894/ssh-to-a-local-virtualbox-with-ubuntu)
+
+To remove a key from `~/.ssh/known_hosts`
+``` bash
+$> ssh-keygen -R '[fedoraserver_vm]:2222'
+$> ssh-keygen -R '[localhost]:2222'
+```
+
+Debug
+``` bash
+$> ssh -vvv
+```
+
+Copy public key to remote server to avoid mdp connection
+``` bash
+$> ssh-copy-id -i ~/.ssh/id_rsa.pub gautbure@serverip
+```
+
+To unlock private key every time it is asked in a script:
+``` bash
+$> sshpass -v -P 'passphrase' -p $MDP ssh -vvv -o StrictHostKeyChecking=no gautier@serverip
+$> SSHPASS="sshpass -v -P 'passphrase' -p $MDP"
+$> $SSHPASS ssh gautier@serverip test -d
+```
+
+`-P` option is prompt to look for when sshpass should try to input MDP instead of user prompt (stdin).
