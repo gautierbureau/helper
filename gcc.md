@@ -50,3 +50,4 @@ $> echo "" | g++ -undef -dM -E -x c++ -
 - g++ -l : link libraries
 - -x : langage
 - -E : prints results to stdout instead of a file.
+- -Wl,--start-group,...,--end-group : comma separated list of options to pass to linker

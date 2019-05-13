@@ -21,7 +21,11 @@ as main.s -o main.o
 
 # Link
 g++ main.o -o main
+# a simple ld on this could work as they are no library to link against but for a more complicated case it is difficult to call ld directly with the right arguments
 # ld main.o -o main
+# -lc --entry main
+# -dynamic-linker /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 -m elf_x86_64
+# -pie
 
 # On mac it is special
 ld -o main  main.o -lSystem
@@ -34,3 +38,7 @@ ld -o main main.o -lSystem -lstdc++
 # To have the ii s and o files and the binary
 g++ -save-temps main.cpp
 ```
+
+Predefined compiler macros:
+
+[https://sourceforge.net/p/predef/wiki/OperatingSystems/](https://sourceforge.net/p/predef/wiki/OperatingSystems/)

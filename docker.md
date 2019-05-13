@@ -6,7 +6,9 @@ $> docker exec -e VAR container_name bash
 $> docker attache container_name
 ```
 
-Some examples fo Dockerfile for multiple applications (and with GUI)
+`/var/lib/docker/`
+
+Some examples for Dockerfile for multiple applications (and with GUI)
 
 https://github.com/jessfraz/dockerfiles
 

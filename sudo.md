@@ -25,3 +25,8 @@ sudo logs
 ``` bash
 $> cat /var/log/audit/audit.log
 ```
+
+sudo cleans environment.
+``` bash
+$> sudo env
+```
