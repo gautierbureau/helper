@@ -25,6 +25,8 @@ Dans une substitution de commande on recupere ce qui est envoye sur stdout et no
 $> toto=$(>&2 echo "error";echo "normal")
 $> toto=$(>&2 echo "error";echo "normal") 2> /dev/null
 $> toto=$(>&2 echo "error";echo "normal") 1> fic1 2> fic2
+$> toto=$(>&2 echo "error";echo "normal" 1>&2);echo toto: $toto
+$> toto=$(2>&1 >&2 echo "error";echo "normal" 1>&2);echo toto: $toto
 ```
 
 ## exec
