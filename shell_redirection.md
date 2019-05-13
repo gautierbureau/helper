@@ -20,3 +20,7 @@ $> toto=$(>&2 echo "error";echo "normal")
 $> toto=$(>&2 echo "error";echo "normal") 2> /dev/null
 $> toto=$(>&2 echo "error";echo "normal") 1> fic1 2> fic2
 ```
+
+## exec
+
+exec dans un script permet de rediriger toutes les sorties du script vers un fichier
