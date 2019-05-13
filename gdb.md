@@ -4,6 +4,8 @@ $ catch throw
 $ catch catch
 $ catch exception
 $ catch assert
+$ break abort
+$ break __assert_fail
 $ r
 $ n
 $ s
@@ -32,6 +34,7 @@ $> gdbgui ./main
 ```
 
 [Quick Ref](http://beej.us/guide/bggdb/#qref)
+[Gdbinit](https://github.com/gdbinit/Gdbinit)
 
 [cgdb](https://github.com/cgdb/cgdb)
 [Voltron](https://github.com/snare/voltron)
