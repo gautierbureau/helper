@@ -13,6 +13,8 @@ $> command 2>-
 $> command 1>-
 ```
 
+[https://wiki.bash-hackers.org/howto/redirection_tutorial](https://wiki.bash-hackers.org/howto/redirection_tutorial)
+
 ## echo stderr
 
 ``` bash
