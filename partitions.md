@@ -34,6 +34,11 @@ $> sfdisk /dev/sda < sda.partition.table
 > dnf install cloud-utils-growpart
 ```
 
+Extend partition
+``` bash
+$> echo 1 > /sys/block/sdb/device/rescan
+```
+
 Extend partition Parted
 ``` bash
 $> parted /dev/sda

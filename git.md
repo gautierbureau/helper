@@ -162,6 +162,8 @@ $> echo 'test content' | git hash-object —stdin
 
 bisect, archive, blame, reflog, revert, gc, log, rev-parse, symbolic-ref, update-ref
 
+All sha1 in `.git/logs/refs/heads`
+
 Diff: git diff will show the difference between your workspace and the index.
 - workspace vs repo: `git diff HEAD`
 - to see index vs repos: `git diff --cached` (can also use `--staged`)

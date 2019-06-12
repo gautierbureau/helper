@@ -3,6 +3,7 @@ Les redirections sont toujours traitées de gauche à droite.
 ``` bash
 $> commande 1> fichier 2>&1
 $> commande 2> fichier 1>&2
+$> commande 1> /dev/null 2>&1
 ```
 
 La syntaxe `1>resu 2>&1` n’est pas équivalente à `2>&1 1>resu`. Dans le second cas, la sortie d’erreur standard est redirigée vers la sortie standard, c’est-à-dire vers le terminal. Puis la sortie standard est associée au fichier resu. Conclusion : les messages d’erreur sont dirigés vers le terminal et les messages résultat dans le fichier resu.
@@ -14,6 +15,8 @@ $> command 1>-
 ```
 
 [https://wiki.bash-hackers.org/howto/redirection_tutorial](https://wiki.bash-hackers.org/howto/redirection_tutorial)
+
+https://stackoverflow.com/questions/5677201/how-to-pipe-stdout-while-keeping-it-on-screen-and-not-to-a-output-file
 
 ## echo stderr
 
