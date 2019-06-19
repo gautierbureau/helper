@@ -101,3 +101,8 @@ Change launch path of cmd [here](https://community.spiceworks.com/how_to/123751-
 **Super + I**: Windows Settings
 
 **Super + E**: File explorer
+
+Path for startup of cmd:
+Clic droit, Plus, Emplacement du fichier
+
+Clic droit, Propriétés, Démarrer dans
