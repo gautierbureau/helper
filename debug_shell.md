@@ -18,4 +18,6 @@ $> Cmd2
 $> DEBUG set +x
 ```
 
+`#!/bin/bash -xv`
+
 [ShellCheck](https://www.cyberciti.biz/programming/improve-your-bashsh-shell-script-with-shellcheck-lint-script-analysis-tool/) 

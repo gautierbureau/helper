@@ -20,3 +20,7 @@ Problems of `int64_t`: not sure about solution yet
 - `g++ -m64`
 - Include <stdint.h> or <inttypes.h> <cstdint>
 - `int64_t` in macos is long long int and in gnu it is long int (if `__extensions` are not activated for gcc compiler)
+
+ioreg
+
+system_profiler
