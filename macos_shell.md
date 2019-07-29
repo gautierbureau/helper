@@ -10,6 +10,7 @@ Some tools in macos differs from their GNU counterpart, either some of them:
 - `wget`: `wget --no-check-certificate` with the version installed from sources
 - `sed`: `sed -i` does not work `sed -i''` is the right call with the native sed
 - `gdb --args`: `lldb --`
+- read -N: option does not exist
 
 Linker problems:
 - `-Wl,--no-whole-archive`: `-force_load`
@@ -24,3 +25,12 @@ Problems of `int64_t`: not sure about solution yet
 ioreg
 
 system_profiler
+
+## colors
+
+`echo -e "\033[1;31m This is red text \033[0m"`
+`\e` does not wor on macos
+[https://stackoverflow.com/questions/28782394/how-to-get-osx-shell-script-to-show-colors-in-echo](https://stackoverflow.com/questions/28782394/how-to-get-osx-shell-script-to-show-colors-in-echo)
+
+[http://misc.flogisoft.com/bash/tip_colors_and_formatting](http://misc.flogisoft.com/bash/tip_colors_and_formatting)
+

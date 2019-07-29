@@ -62,3 +62,7 @@ case "$choice" in
 		;;
 esac
 ```
+
+## print special characters, ex newline
+
+`printf 'here %q\n' "$IFS"`
