@@ -16,6 +16,17 @@ $> nm -C -D Model.so
 $> valgrind --track-origins=yes --leak-check=full --show-leak-kinds=all ./main
 ```
 
+rpath linux
+``` bash
+$> objdump -x
+$> readelf -d
+$> chrpath
+$> patchelf
+```
+
+[https://amir.rachum.com/blog/2016/09/17/shared-libraries/](https://amir.rachum.com/blog/2016/09/17/shared-libraries/)
+
+
 [Tools](https://github.com/zardus/ctf-tools)
 [Tools](https://linuxsecurity.expert/security-tools/binary-analysis-tools)
 

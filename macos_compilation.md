@@ -6,3 +6,11 @@ $> install_name_tool -id absolutePathForLib.dylib @rpath/libName.dylib libName.d
 ```
 
 [https://wincent.com/wiki/@executable_path,_@load_path_and_@rpath](https://wincent.com/wiki/@executable_path,_@load_path_and_@rpath)
+
+https://medium.com/@donblas/fun-with-rpath-otool-and-install-name-tool-e3e41ae86172
+
+
+https://gitlab.kitware.com/cmake/community/wikis/doc/cmake/RPATH-handling
+
+
+https://gist.github.com/robertmaynard/5750737

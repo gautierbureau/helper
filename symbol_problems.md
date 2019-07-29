@@ -14,11 +14,12 @@ objdump -T /lib64/libstdc++.so.6 | c++filt | grep "_List_node_base::_M_hook"
 
 objdump -T /usr/lib/libstdc++.so.6 | grep _List_node_base | c++filt | grep hook
 
+objdump -T lib.so | grep GLIBC 
 
 /bin/ld: libdynawo_Common.so.0.1.1: No symbol version section for versioned symbol `pthread_rwlock_rdlock@GLIBC_2.2.5'
  objdump -T /lib64/libc.so.6 | grep pthread
 
- 
+
  readelf -Ws /lib64/libstdc++.so.6.0.24 | c++filt | grep hook
  ```
 

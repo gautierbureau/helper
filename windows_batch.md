@@ -49,6 +49,11 @@ Help
 > dir /?
 ```
 
+Disques réseaux
+```
+$ net use
+```
+
 MSVC
 ``` batch
 > cl /EHsc main.cpp

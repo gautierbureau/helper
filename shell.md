@@ -66,3 +66,9 @@ esac
 ## print special characters, ex newline
 
 `printf 'here %q\n' "$IFS"`
+
+## date
+
+``` bash
+$> date '+%d.%m.%y-%H.%M.%S’
+```
