@@ -14,3 +14,12 @@ https://gitlab.kitware.com/cmake/community/wikis/doc/cmake/RPATH-handling
 
 
 https://gist.github.com/robertmaynard/5750737
+
+std::__cxx11::basic_string
+std::__1::basic_string
+
+https://www.boost.org/doc/libs/1_58_0/libs/log/doc/html/log/rationale/namespace_mangling.html
+
+https://github.com/libbitcoin/libbitcoin-client/issues/116
+
+https://stackoverflow.com/questions/25410886/boost-log-linker-error-with-macports-on-os-x-10-7
