@@ -97,6 +97,22 @@ set NNI=
 set PASSWORD=
 ```
 
+Netbios
+```
+nbtstat -n
+```
+
+AD
+```
+> net user /domain USER_NAME
+> net group GROUPE_NAME /domain
+
+> gpresult /V
+> gpresult /R
+
+> whoami /groups
+```
+
 Set default path [here](https://www.java.com/fr/download/help/path.xml)
 
 Change launch path of cmd [here](https://community.spiceworks.com/how_to/123751-change-the-default-path-in-the-command-prompt)
@@ -111,3 +127,19 @@ Path for startup of cmd:
 Clic droit, Plus, Emplacement du fichier
 
 Clic droit, Propriétés, Démarrer dans
+
+Password manager
+```
+rundll32.exe keymgr.dll,KRShowKeyMgr
+```
+
+## MSI on Server
+
+I run in some trouble to install a msi on windows server, i had to open terminal with admin privileges
+
+```
+> msiexec /a package.msi
+> msiexec /i package.msi
+```
+
+https://social.technet.microsoft.com/Forums/windows/en-US/64af2d23-e45c-413f-bf1b-5ea7c9d52abd/why-as-an-admin-can-i-not-install-a-msi-package-on-windows-server-2008-r2?forum=winservergen

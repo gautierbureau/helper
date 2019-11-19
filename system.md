@@ -53,6 +53,7 @@ $> syslogd
 $> journalctl
 $> journalctl -k -p warning..emerg
 $> journalctl _SYSTEMD_UNIT=ssh.service -o json-pretty
+$> journalctl -f
 ```
 
 /etc/systemd/journald.conf
@@ -119,4 +120,4 @@ cups
 localhost:631
 /etc/cups/cupsd.conf
 
-
+nmcli : NetworkManager

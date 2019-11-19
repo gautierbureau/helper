@@ -123,3 +123,8 @@ $> $SSHPASS ssh gautier@serverip test -d
 ```
 
 `-P` option is prompt to look for when sshpass should try to input MDP instead of user prompt (stdin).
+
+log files
+``` bash
+$> cat /var/log/secure
+```

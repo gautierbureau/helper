@@ -28,3 +28,7 @@ https://docs.microsoft.com/fr-fr/windows/win32/winprog/using-the-windows-headers
 https://docs.microsoft.com/en-us/cpp/porting/modifying-winver-and-win32-winnt?redirectedfrom=MSDN&view=vs-2019
 
 C:/Program Files (x86)/Windows Kits/10/bin/10.0.18362.0/x64/mt.exe
+
+vs_community.exe --layout D:\Packages\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
+d:\Packages\vslayout\vs_community.exe --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended
+

@@ -47,3 +47,19 @@ new download command pour télécharger des rpm
 $> dnf install dnf-plugins-core
 ```
 https://www.rootusers.com/25-useful-dnf-command-examples-for-package-management-in-linux/
+
+## yum
+
+``` bash
+$> yum install epel-release
+$> yum install atomic-release
+$> yum --disablerepo=* --enablerepo=epel update
+$> yum repolist
+$> ls /etc/yum.repos.d/
+$> yum-config-manager --add-repo repository_url
+$> yum-config-manager --enable repository
+```
+
+https://www.unixmen.com/enable-disable-repositories-centos/
+https://www.cyberciti.biz/faq/installing-rhel-epel-repo-on-centos-redhat-7-x/
+https://wiki.atomicorp.com/wiki/index.php/Getting_Started
