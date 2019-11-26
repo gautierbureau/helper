@@ -18,9 +18,13 @@ set_target_properties : cannot be used with cmake generator expression
 
 Commands
 ```
-$> cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -B build -S. -DCMAKE_INSTALL_PREFIX=install
+$> cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -B build -S . -DCMAKE_INSTALL_PREFIX=install
 $> cmake --build build
+$> cmake --build build --target install # equivalent of make install
+$> cmake --install build # CMake 3.15+ only
 ```
+
+The install() command generates a file, cmake_install.cmake, inside the build directory, which is used internally by the generated install target and by CPack. You can also invoke this script manually with cmake -P.
 
 Create relocatable packages
 
@@ -34,3 +38,19 @@ Attention à:
 https://cmake.org/pipermail/cmake/2016-May/063400.html : explanation on PUBLIC PRIVATE INTERFACE for target_link_libraries and differences for shared and static libs.
 
 https://cmake.org/cmake/help/latest/manual/cmake-buildsystem.7.html#transitive-usage-requirements
+
+-DCMAKE_BUILD_TYPE=
+-DCMAKE_INSTALL_PREFIX=
+-DBUILD_SHARED_LIBS=
+
+cmake -D
+cmake -L to see options
+cmake --trace-source="filename" --trace-expand
+
+execute_process(
+
+try_compile / try_run
+
+https://cliutils.gitlab.io/modern-cmake/modern-cmake.pdf
+
+https://gitlab.kitware.com/cmake/community/wikis/doc/cpack/PackageGenerators
