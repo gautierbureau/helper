@@ -9,3 +9,5 @@ https://www.boost.org/doc/libs/1_42_0/more/getting_started/unix-variants.html#li
 
 b2 option: --layout=versionned,tagged,system : to modify the naming convention
 
+log namespace (voir aussi macos_compilation)
+https://www.boost.org/doc/libs/1_58_0/libs/log/doc/html/log/rationale/namespace_mangling.html
