@@ -22,10 +22,6 @@ Problems of `int64_t`: not sure about solution yet
 - Include <stdint.h> or <inttypes.h> <cstdint>
 - `int64_t` in macos is long long int and in gnu it is long int (if `__extensions` are not activated for gcc compiler)
 
-ioreg
-
-system_profiler
-
 ## colors
 
 `echo -e "\033[1;31m This is red text \033[0m"`
@@ -34,3 +30,5 @@ system_profiler
 
 [http://misc.flogisoft.com/bash/tip_colors_and_formatting](http://misc.flogisoft.com/bash/tip_colors_and_formatting)
 
+ioreg
+system_profiler
