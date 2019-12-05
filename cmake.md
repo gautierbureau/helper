@@ -54,3 +54,5 @@ try_compile / try_run
 https://cliutils.gitlab.io/modern-cmake/modern-cmake.pdf
 
 https://gitlab.kitware.com/cmake/community/wikis/doc/cpack/PackageGenerators
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)

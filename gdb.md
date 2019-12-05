@@ -42,3 +42,5 @@ $> gdbgui ./main
 [Breakpoints](http://www.unknownroad.com/rtfm/gdbtut/gdbbreak.html)
 [Breakpoints](https://sourceware.org/gdb/onlinedocs/gdb/Set-Breaks.html)
 [Catchpoints](https://sourceware.org/gdb/onlinedocs/gdb/Set-Catchpoints.html)
+
+https://stackoverflow.com/questions/2443135/how-do-i-find-where-an-exception-was-thrown-in-c

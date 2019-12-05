@@ -52,6 +52,9 @@ $> mvn dependency:list
 - Java FX
 - JCF : Java Collections Framework
 - JSP : Java Server Pages
+- JSTL : JavaServer Pages Standard Tag Library
+- JDBC : Java DataBase Connectivity
+- JPA : Java Persistence API
 
 Servlet est une classe Java qui permet de créer dynamiquement des données au sein d'un serveur HTTP. Ces données sont le plus généralement présentées au format HTML, mais elles peuvent également l'être au format XML ou tout autre format destiné aux navigateurs web. Les servlets utilisent l'API Java Servlet.  Il existe plusieurs conteneurs de servlets, dont Apache Tomcat ou encore Jetty. Le serveur d'application JBoss Application Server utilise Apache Tomcat.
 
