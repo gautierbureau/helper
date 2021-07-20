@@ -44,3 +44,14 @@ $> gdbgui ./main
 [Catchpoints](https://sourceware.org/gdb/onlinedocs/gdb/Set-Catchpoints.html)
 
 https://stackoverflow.com/questions/2443135/how-do-i-find-where-an-exception-was-thrown-in-c
+
+See currents library loaded :
+``` bash
+$ info symbol DYN::Timers::getInstance
+```
+
+See NixNote
+
+## Conditions
+
+$_streq(voltageLevelIIDM.getId().c_str(), "Test") : in Clion no if

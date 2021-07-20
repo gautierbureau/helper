@@ -1,4 +1,10 @@
-# Test on ld command
+## man
+
+Linux : https://linux.die.net/man/1/ld
+
+OS X : https://www.unix.com/man-page/osx/1/ld/
+
+## Test on ld command
 working with gcc:
 gcc -c ltest.c -I../KLU/Include -I../AMD/Include -I../UFconfig/  -I../COLAMD/Include -I../BTF/Include -o ltest.o
 gcc ltest.o -o ltest -L. -Wl,--no-as-needed -lm -lklu
@@ -10,7 +16,7 @@ ld  ltest.o -o ltest -L. --entry main -lc -lm -lklu -dynamic-linker /lib64/ld-li
 working but c/c from gcc output with -v and replace collect2:
 ld --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o ltest /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/7/crtbegin.o -L. -L/usr/lib/gcc/x86_64-redhat-linux/7 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/7/../../.. ltest.o -lm -lklu -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/7/crtend.o /usr/lib/gcc/x86_64-redhat-linux/7/../../../../lib64/crtn.o
 
-# as-needed error with omc
+## as-needed error with omc
 
 linker switch from --no-as-needed to --as-needed in its default options
 http://www.bnikolic.co.uk/blog/gnu-ld-as-needed.html
@@ -29,3 +35,5 @@ CFLAGS=-Wl,--no-as-needed
 CXXFLAGS=-Wl,--no-as-needed
 
 sqrt from libcolamd is not found in -lm if -Wl,--no-as-needed is not specified, omc has version 7 hardcoded so the error with gcc 8
+
+http://www.bnikolic.co.uk/blog/linux-ld-debug.html

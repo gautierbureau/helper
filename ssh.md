@@ -128,3 +128,5 @@ log files
 ``` bash
 $> cat /var/log/secure
 ```
+
+ssh -o PubkeyAuthentication=no 

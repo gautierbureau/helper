@@ -39,6 +39,13 @@ ld -o main main.o -lSystem -lstdc++
 g++ -save-temps main.cpp
 ```
 
+https://www.toptal.com/c-plus-plus/c-plus-plus-understanding-compilation
+
 Predefined compiler macros:
 
 [https://sourceforge.net/p/predef/wiki/OperatingSystems/](https://sourceforge.net/p/predef/wiki/OperatingSystems/)
+
+## Compile without libc
+
+https://blogs.oracle.com/linux/hello-from-a-libc-free-world-part-1-v2
+https://blogs.oracle.com/linux/hello-from-a-libc-free-world-part-2-v2

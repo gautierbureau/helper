@@ -10,6 +10,8 @@ On ne peut avoir que 4 paritions primaires. GPT peut remédier à ca.
 Various infos
 ``` bash
 $> fdisk -l /dev/sda
+$> fdisl -l /dev/sda1
+$> lsblk -f
 $> lsblk
 $> parted -l /dev/sda
 $> ls /dev/disk/by-id/
@@ -101,6 +103,28 @@ $> vgs
 $> lvs
 $> pvresize /dev/sda4
 $> lvextend -l +100%FREE /dev/mapper/vg0-root /dev/sda4
+```
+
+Reduce size
+``` bash
+$> fuser -k  /home
+$> lsof | grep /home
+
+# probleme ne marche pas avec un xfs
+$> umount /home
+
+$> e2fsck -ff /dev/vg_system/lv_home # scan to make sure filesystem is ok
+$> resize2fs -p /dev/vg_system/lv_home 40G # 40G ets la nouvelle taille
+
+$> lvreduce -L -20G /dev/vg_system/lv_home # on enleve 20G
+$> lvreduce -L 40G /dev/vg_system/lv_home # on met à la taille 40G
+
+# redo everystep to make sure filesystem is ok
+$> e2fsck -f /dev/vg_system/lv_home
+$> resize2fs -p /dev/vg_system/lv_home
+$> e2fsck -f /dev/vg_system/lv_home
+
+$> mount /dev/vg_system/lv_home /home
 ```
 
 [http://www.tldp.org/HOWTO/LVM-HOWTO/](http://www.tldp.org/HOWTO/LVM-HOWTO/)

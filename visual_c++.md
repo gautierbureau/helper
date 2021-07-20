@@ -2,14 +2,14 @@ Version numbering: [Wiki](https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B
 
 Visual Studio, MSVC++ and cl have different version numbers. There's the branded version (printed on the box), the internal version (displayed in the About dialog box), and the compiler version (displayed by cl.exe and the _MSC_VER macro).
 
-Par exemple: 
-- MSVC++ 14.23, link -version ou nmake -version, (donne msvc 142 pour boost)
-- _MSC_VER == 1923, cl -version
+Par exemple:
+- MSVC++ 14.23, link -version ou nmake -version, (donne msvc 142 pour boost) (https://cmake.org/cmake/help/latest/variable/MSVC_TOOLSET_VERSION.html)
+- _MSC_VER == 1923, cl -version (https://cmake.org/cmake/help/latest/variable/MSVC_VERSION.html)
 - Visual Studio 2019 Version 16.3, MSBuild -version
 
 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat" /help
 
-MS: Microsoft 
+MS: Microsoft
 VC: Visual C++
 CRT: C Runtime
 
@@ -63,3 +63,22 @@ MSBuild c++
 https://docs.microsoft.com/en-us/cpp/build/walkthrough-using-msbuild-to-create-a-visual-cpp-project?view=vs-2019
 
 "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe"
+
+## Links
+
+https://developer.microsoft.com/fr-fr/windows/downloads/sdk-archive
+https://visualstudio.microsoft.com/fr/vs/older-downloads/
+https://my.visualstudio.com/Downloads?q=visual%20studio%202015&wt.mc_id=o~msft~vscom~older-downloads
+
+
+https://docs.microsoft.com/fr-fr/visualstudio/productinfo/2015-redistribution-vs
+
+## cl Versions
+
+- 19.00.23026 : VS2015 iso
+- 19.00.24210 : VS2015 With Update 3 from ISO
+- 19.00.24215.1 : VS2015 from Web Installer
+- 19.00.24245 : VS2015 from VS2019 Installer
+- 19.22.xxx : VS2019
+
+https://devblogs.microsoft.com/cppblog/finding-the-visual-c-compiler-tools-in-visual-studio-2017/#comment-271656

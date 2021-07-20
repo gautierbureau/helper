@@ -24,3 +24,11 @@ The GNU ld linker is a so-called smart linker. It will keep track of the functio
 https://people.cs.pitt.edu/~xianeizhang/notes/Linking.html
 
 https://eli.thegreenplace.net/2013/07/09/library-order-in-static-linking
+
+https://www.lurklurk.org/linkers/linkers.html : guide to linkers
+
+https://linker.iecc.com/
+
+http://man.yolinux.com/cgi-bin/man2html?cgi_command=ld.so(8)
+
+https://linux.die.net/man/1/ld

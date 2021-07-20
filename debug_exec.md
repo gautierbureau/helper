@@ -18,7 +18,7 @@ $> valgrind --track-origins=yes --leak-check=full --show-leak-kinds=all ./main
 
 rpath linux
 ``` bash
-$> objdump -x
+$> objdump -x lis.so | grep RPATH
 $> readelf -d
 $> chrpath
 $> patchelf

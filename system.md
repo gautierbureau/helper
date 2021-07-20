@@ -54,6 +54,9 @@ $> journalctl
 $> journalctl -k -p warning..emerg
 $> journalctl _SYSTEMD_UNIT=ssh.service -o json-pretty
 $> journalctl -f
+$> journalctl -e -u jenkins-slave.service
+$> journalctl -b -1 # like dmesg for old kernel logs
+$> journalctl --list-boots
 ```
 
 /etc/systemd/journald.conf

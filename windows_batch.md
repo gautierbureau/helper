@@ -2,6 +2,11 @@ Commands are not case sensitive.
 
 [List](https://windows.developpez.com/cours/ligne-commande/?page=page_4)
 
+```
+> start C:\Windows\System32\cmd.exe
+> start . :: Start File Explorer
+```
+
 Chang disk
 ``` batch
 > d:
@@ -37,6 +42,8 @@ Commands
 > del /s /q *
 ```
 
+Difference & and && : l'un execute la suite meme si le processus d'avant à échouer et pas l'autre.
+
 Git setup
 ``` batch
 > mklink %userprofile%\.gitconfig %userprofile%\Config\gitconfig
@@ -51,7 +58,9 @@ Help
 
 Disques réseaux
 ```
-$ net use
+> net use
+> net use z: \\10.10.10.10
+> net use z: /delete
 ```
 
 MSVC
@@ -143,3 +152,13 @@ I run in some trouble to install a msi on windows server, i had to open terminal
 ```
 
 https://social.technet.microsoft.com/Forums/windows/en-US/64af2d23-e45c-413f-bf1b-5ea7c9d52abd/why-as-an-admin-can-i-not-install-a-msi-package-on-windows-server-2008-r2?forum=winservergen
+
+Path short form: dir /x, bureau~1 equivalent à bureaugau
+
+rd /s "\\?\D:\Users\bureaugau\build-third"
+
+## Windows Credential Manager
+
+```
+> rundll32.exe keymgr.dll,KRShowKeyMgr
+```
