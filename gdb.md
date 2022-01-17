@@ -55,3 +55,21 @@ See NixNote
 ## Conditions
 
 $_streq(voltageLevelIIDM.getId().c_str(), "Test") : in Clion no if
+
+##
+
+set print elements 10000 # afficher plus de valeurs dans un vecteur
+
+Pour exec plusieurs commandes à la suite:
+https://stackoverflow.com/questions/24614856/how-to-run-multiple-command-in-a-single-line
+(gdb) define mycommand
+Type commands for definition of "mycommand".
+End with a line saying just "end".
+>info threads
+>c
+>end
+(gdb) mycommand
+
+-ex "thread apply all bt" -ex "quit"
+-batch 
+

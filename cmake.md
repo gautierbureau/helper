@@ -111,3 +111,9 @@ $<IF:$<CONFIG:Release>,-O3,-O0>"
 $<IF:$<BOOL:${BUILD_SHARED_LIBS}>,--disable-static,--enable-static>
 $<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>
 $<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:-fPIC>
+
+
+https://gitlab.kitware.com/cmake/community/wikis/doc/tutorials/How-To-Write-Platform-Checks
+
+https://gitlab.kitware.com/cmake/community/wikis/doc/cmake/Useful-Variables
+
